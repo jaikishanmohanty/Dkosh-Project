@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="TS_dKOSH_001" parallel="tests">
+<listeners>
+		<listener class-name="helpers.ListenerTest"></listener>
+	</listeners>
+	<test verbose="2" name="TS_dKOSH_014_DS_001">
+	<parameter name="CF_Id" value="CF_004" />
+	<classes>
+		<class name="dkosh.tc.TCForm">
+			<methods>
+				<include name="TC_Login"></include>
+			<include name="TC_dK_001"></include> 
+			<include name="TC_dK_002"></include>  
+			<include name="TC_dK_003"></include> 
+			<include name="TC_dK_004"></include> 
+			<include name="TC_dK_005"></include>  
+			 <include name="TC_dK_006"></include> 
+			<include name="TC_dK_008"></include>
+			<include name="TC_dK_029"></include> 
+			<include name="TC_dK_009"></include>  
+			<include name="TC_dK_010"></include>
+			<include name="TC_dK_012"></include> 
+			<include name="TC_dK_013"></include>
+			<include name="TC_dK_014"></include>
+			<include name="TC_dK_015"></include>
+			<include name="TC_dK_017"></include> 
+			<include name="TC_dK_021"></include> 
+			<include name="TC_dK_022"></include> 	
+		<!--	<include name="TC_dK_020"></include>
+			<include name="TC_dK_023"></include> -->
+		
+			</methods>
+		</class>
+		
+		<!--  <class name="dkosh.tc.TCQuestionPanel">
+			<methods>
+				<include name="navigateToDkoshManageFormList"></include>
+			 	<include name="TC_dK_008"></include> 
+			</methods>
+		</class> -->
+	</classes>
+</test>
+ 
+</suite>

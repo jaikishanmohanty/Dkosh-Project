@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TS_dKOSH_001]" parallel="tests">
+  <listeners>
+    <listener class-name="helpers.ListenerTest"/>
+  </listeners>
+  <test thread-count="1" name="TS_dKOSH_014_DS_001(failed)" parallel="tests">
+    <parameter name="CF_Id" value="CF_004"/>
+    <classes>
+      <class name="dkosh.tc.TCForm">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC_dK_006" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dkosh.tc.TCForm -->
+    </classes>
+  </test> <!-- TS_dKOSH_014_DS_001(failed) -->
+</suite> <!-- Failed suite [TS_dKOSH_001] -->
